@@ -6,6 +6,7 @@ import UploadButton from '../components/UploadButton';
 import QuizGenerateButton from '../components/QuizGenerateButton';
 import styles from '../styles/Main.module.css'
 import axios from 'axios';
+import pdf from '../files/sample.pdf';
 
 const Main = () => {
     const [uploadedFile, setUploadedFile] = useState(null);
@@ -25,7 +26,8 @@ const Main = () => {
         axios.post(backendServerUrl, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
-            }
+            },
+            responseType: 'blob'
         })
         .then(response => {
             const data = response.data;
@@ -34,8 +36,7 @@ const Main = () => {
             navigate('/result', {state: {data}});
         })
         .catch(error => {
-            // alert("오류가 발생했습니다.")
-            navigate('/result');
+            alert("오류가 발생했습니다.")
         })
 
     };
