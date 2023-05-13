@@ -6,7 +6,6 @@ import UploadButton from '../components/UploadButton';
 import QuizGenerateButton from '../components/QuizGenerateButton';
 import styles from '../styles/Main.module.css'
 import axios from 'axios';
-import pdf from '../files/sample.pdf';
 
 const Main = () => {
     const [uploadedFile, setUploadedFile] = useState(null);
