@@ -10,7 +10,7 @@ import {useLocation} from 'react-router-dom';
 function Result(props) {
     const location = useLocation();
     const data = location.state.data;
-
+    
     return (
         <div className={styles.home}>
             <BackgroundImage url={backgroundImage}/>

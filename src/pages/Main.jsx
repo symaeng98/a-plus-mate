@@ -19,10 +19,9 @@ const Main = () => {
     const navigate = useNavigate();
 
     const sendPdfToServer = () => {
-        const backendServerUrl = process.env.React_APP_BACKEND_SERVER_URL;
+        const backendServerUrl = "http://localhost:8000/pdf";
         const formData = new FormData();
-        formData.append('handwriting', uploadedFile);
-        console.log(backendServerUrl);
+        formData.append('pdf', uploadedFile);
         axios.post(backendServerUrl, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
