@@ -1,0 +1,18 @@
+.loading div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+}
+  
+.loading img {
+width: 100px;
+height: 100px;
+}
+
+.loading p {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
