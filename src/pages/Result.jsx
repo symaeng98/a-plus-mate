@@ -27,7 +27,7 @@ function Result(props) {
                         <p style={{fontSize:"13px"}}>(1-2분 소요)</p>
                     </div>
                     <div style={{alignItems:"left" ,overflow:"auto"}}>
-                        <iframe title='form' src={surveyUrl} width="700" height="2000" frameBorder="0" marginHeight="0" marginWidth="0">로드 중…</iframe>
+                        <iframe title='form' src={surveyUrl} width="700" height="2500" frameBorder="0" marginHeight="0" marginWidth="0">로드 중…</iframe>
                     </div>
                 </div>
             </div>
