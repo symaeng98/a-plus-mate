@@ -7,7 +7,7 @@ function Loading(props) {
             <div>
                 <img src="/loading.gif" alt="loading"/>
             </div>
-            <p>문제를 생성 중입니다.</p>
+            <p>교안 양에 따라 최대 1분 정도 소요될 수 있습니다</p>
         </div>
     );
 }
