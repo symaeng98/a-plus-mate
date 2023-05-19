@@ -10,7 +10,6 @@ import axios from 'axios';
 
 const Main = (props) => {
     const [uploadedFile, setUploadedFile] = useState(null);
-    const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     
     const handleFileUpload = (file) => {
@@ -33,7 +32,6 @@ const Main = (props) => {
         })
         .then(response => {
             const data = response.data;
-            setData(response.data)
             console.log(data); // 외부 URL로 전송된 파일의 정보 출력
             
             navigate('/result', {state: {data}});

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from '../styles/Button.module.css'
 
 function DownloadButton(props) {
     const downloadFile = () => {
@@ -14,11 +13,7 @@ function DownloadButton(props) {
     };
 
     return (
-        <div>
-            <button onClick={downloadFile} className={styles["big"]}>
-                <span className={styles["big-span"]}>{props.content}</span>
-            </button>
-        </div>
+        <button style={{backgroundColor:"white", border:"none", fontSize : "24px", color:"#B9A3F8", fontWeight : "800"}} onClick={downloadFile}>{props.content}</button>
     );
 }
 
