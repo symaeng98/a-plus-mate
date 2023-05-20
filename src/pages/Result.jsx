@@ -17,7 +17,7 @@ function Result(props) {
                     <div style={{width:"500px", fontSize:"22px", fontWeight:"800"}}>
                         <p style={{fontSize:"66px", fontWeight:"700", lineHeight:"0"}}>안녕하세요!</p>
                         <p>저희는 세종대학교 디자인 씽킹 과목을 수강하고 있는</p>
-                        <span style={{fontSize:"40px", fontWeight:"700",color:"#BB2D0E"}}>A+ 메이트</span>
+                        <span style={{fontSize:"40px", fontWeight:"700",color:"#BB2D0E"}}>에이플 메이트</span>
                         <span> 입니다</span>
                     </div>
                     <div style={{width:"600px", fontSize:"22px", fontWeight:"800"}}>

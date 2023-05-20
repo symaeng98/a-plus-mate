@@ -13,8 +13,15 @@ function Home(props) {
             <BackgroundImage url={backgroundImage}/>
             <div className={styles.description}>
                 <div>
-                    <span className={styles.title}>에이플 메이트</span>
-                    <p className={styles.detail}>강의 교안을 올리고 문제를 생성해보세요!</p>
+                    <span className={styles.title}>에이플 메이트</span><br/>
+                    <div className={styles.detail}>
+                        교수님이 주신
+                        <span style={{color:"red"}}> 강의 자료</span>
+                        , 내가 직접
+                        <span style={{color:"green"}}> 정리한 자료</span>
+                        를 문제로 만들어보세요!
+                        <p style={{fontSize:"14px", color:"grey"}}>현재 PC에서만 이용 가능합니다</p>
+                    </div>
                     <div>
                         <Link to={"/main"}>
                             <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop:"150px"}}>
