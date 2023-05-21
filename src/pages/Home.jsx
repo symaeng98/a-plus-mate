@@ -20,7 +20,7 @@ function Home(props) {
                         , 내가 직접
                         <span style={{color:"green"}}> 정리한 자료</span>
                         를 문제로 만들어보세요!
-                        <p style={{fontSize:"14px", color:"grey"}}>현재 PC에서만 이용 가능합니다</p>
+                        <p style={{fontSize:"14px", color:"grey"}}>해당 서비스는 PC에 최적화되어 있습니다.</p>
                     </div>
                     <div>
                         <Link to={"/main"}>

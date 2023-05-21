@@ -1,0 +1,82 @@
+.home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.description {
+  display : flex;
+  justify-content: center;
+  align-items : center;
+  margin: auto;
+}
+
+#aa {
+  margin: auto;
+}
+
+.title {
+  font-size : 128px;
+  font-weight : 600;
+}
+
+.detail {
+  font-size : 24px;
+  font-weight : 600;
+  padding-left : 10px;
+  margin-top: 50px;
+}
+
+.survey_greetings {
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 0;
+}
+
+.survey_detail {
+  width: 600px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.survey {
+  overflow: auto;
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬합니다. */
+  align-items: center; /* 세로 방향 가운데 정렬합니다. */
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .home {
+    /* 핸드폰 화면에 적용될 스타일 */
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+  }
+
+  .title {
+    font-size: 64px; /* 제목의 크기를 줄임 */
+  }
+
+  .detail {
+    font-size: 16px; /* 디테일 텍스트의 크기를 줄임 */
+    margin-top: 20px; /* 상단 여백을 조정 */
+    text-align: center; /* 가운데 정렬 */
+  }
+
+  .survey_detail {
+    width: 600px;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .survey_greetings {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0;
+  }
+}

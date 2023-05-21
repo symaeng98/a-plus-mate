@@ -31,11 +31,21 @@ body {
     margin-top: 50px;
 }
 
-.survey {
-    overflow: auto;
-    display: flex;
-    justify-content: center; /* 가로 방향 가운데 정렬합니다. */
-    align-items: center; /* 세로 방향 가운데 정렬합니다. */
-    background-color: rgba(242, 240, 255, 0.36);
-    width: 55vw;
-}
+/* 핸드폰 화면에서의 스타일 */
+@media (max-width: 800px) {
+    .home {
+      /* 핸드폰 화면에 적용될 스타일 */
+      flex-direction: column; /* 세로 방향으로 정렬 */
+      align-items: center; /* 가운데 정렬 */
+    }
+  
+    .title {
+      font-size: 54px; /* 제목의 크기를 줄임 */
+    }
+  
+    .detail {
+      font-size: 16px; /* 디테일 텍스트의 크기를 줄임 */
+      margin-top: 20px; /* 상단 여백을 조정 */
+      text-align: center; /* 가운데 정렬 */
+    }
+  }
