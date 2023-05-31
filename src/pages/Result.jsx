@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "../styles/Result.module.css"
 import DownloadButton from '../components/DownloadButton';
 import {Link, useLocation} from 'react-router-dom';
@@ -9,6 +9,22 @@ function Result(props) {
     const location = useLocation();
     const data = location.state.data;
     const surveyUrl = process.env.React_APP_Survey_URL;
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.innerWidth <= 900); // 화면 너비가 768px 이하인 경우 핸드폰으로 간주
+        };
+
+        handleResize(); // 초기 로드 시 크기 확인
+
+        window.addEventListener('resize', handleResize); // 창 크기 변경 시 크기 확인
+
+        return () => {
+        window.removeEventListener('resize', handleResize); // 컴포넌트 언마운트 시 이벤트 리스너 제거
+        };
+    }, []);
 
     return (
         <div className={styles.home}>
@@ -29,7 +45,12 @@ function Result(props) {
                         </div>
                     </div>
                     <div style={{alignItems:"left" ,overflow:"auto"}}>
-                        <iframe title='form' src={surveyUrl} width="700" height="2500" frameBorder="0" marginHeight="0" marginWidth="0">로드 중…</iframe>
+                        <iframe title='form' src={surveyUrl} 
+                        style = {{
+                            width: isMobile ? '400px' : '700px',
+                        }}
+                        height="3600" frameBorder="0" marginHeight="0" marginWidth="0"
+                        >로드 중…</iframe>
                     </div>
                 </div>
             </div>
