@@ -37,7 +37,7 @@ const Main = (props) => {
             navigate('/result', {state: {data}});
         })
         .catch(error => {
-            alert("오류가 발생했습니다.")
+            alert("현재 사용량이 많아 1분 뒤에 다시 시도해주세요.")
         })
         .finally (()=>{
             setIsLoading(false);
