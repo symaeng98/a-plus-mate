@@ -10,10 +10,9 @@ import styles from "../styles/Home.module.css"
 function Home(props) {
     return (
         <div className={styles.home}>
-            <BackgroundImage url={backgroundImage}/>
             <div className={styles.description}>
                 <div>
-                    <span className={styles.title}>에이플 메이트</span><br/>
+                    <div className={styles.title}>에이플 메이트</div><br/>
                     <div className={styles.detail}>
                         교수님이 주신
                         <span style={{color:"red"}}> 강의 자료</span>

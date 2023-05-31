@@ -27,7 +27,7 @@ function UploadButton({onFileUpload, content, icon}) {
                 <img src={icon} alt="oh"/>
                 <span className={styles["upload-span"]}>{content}</span>
             </button>
-            <span className={styles["upload-file-span"]}>{file ? file.name : ''}</span>
+            <div className={styles["upload-file-span"]}>{file ? file.name : ''}</div>
         </div>
     );
 }

@@ -28,3 +28,38 @@
     display: flex;
     justify-content: flex-start;
 }
+
+/* 핸드폰 화면에서의 스타일 */
+@media (max-width: 800px) {
+    .main {
+        padding: 5% 5% 0 5%;
+    }
+    
+    .title {
+        margin: 10px 0 50px 0;
+        text-align: center;
+    }
+    
+    .title span {
+        font-size: 44px;
+        font-weight: 700;
+    }
+    
+    .title p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .template {
+        margin: 0 auto;
+        background-color: #F4EFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
