@@ -1,6 +1,4 @@
 import React from 'react';
-import backgroundImage from '../assets/homeBackgroundImage.png'
-import BackgroundImage from "../components/BackgroundImage";
 import Button from '../components/Button';
 import {Link} from 'react-router-dom';
 import styles from "../styles/Home.module.css"
