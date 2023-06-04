@@ -16,14 +16,6 @@
     font-weight: 400;
 }
 
-.template {
-    margin: 0 auto;
-    background-color: #F4EFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .navigation {
     display: flex;
     justify-content: flex-start;
@@ -48,14 +40,6 @@
     .title p {
         font-size: 15px;
         font-weight: 400;
-    }
-    
-    .template {
-        margin: 0 auto;
-        background-color: #F4EFFF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     .navigation {

@@ -5,7 +5,7 @@
     border-radius: 30px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
     border: none;
-    background-color: #F4EFFF;
+    background-color: #637fe4;
     margin: auto;
 }
 
@@ -16,8 +16,8 @@
 
 .big-span {
     font-size: 24px;
-    font-weight: 600;
-    opacity: 65%;
+    font-weight: 800;
+    color: white;
 }
 
 
@@ -88,12 +88,13 @@
     height: 90px;
     border-radius: 30px;
     border: none;
-    background-color: #F4EFFF;
+    background-color: #637fe4;
 }
 
 .create-span {
     font-size: 24px;
     font-weight: 600;
+    color: white;
 }
 
 .create:active {
@@ -107,7 +108,6 @@
         border-radius: 30px;
         box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
         border: none;
-        background-color: #F4EFFF;
         margin: auto;
     }
     
@@ -118,8 +118,6 @@
     
     .big-span {
         font-size: 16px;
-        font-weight: 600;
-        opacity: 65%;
     }
 
     .upload {
@@ -173,7 +171,6 @@
         height: 80px;
         border-radius: 30px;
         border: none;
-        background-color: #F4EFFF;
     }
     
     .create-span {
