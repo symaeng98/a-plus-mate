@@ -10,8 +10,7 @@
 }
 
 .big:active {
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.8);
-    background-color: #A7A1B4;
+    background-color: #aab9ee;
 }
 
 .big-span {
@@ -93,12 +92,12 @@
 
 .create-span {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
     color: white;
 }
 
 .create:active {
-    background-color: #989898;
+    background-color: #aab9ee;
 }
 
 @media (max-width: 800px) {
@@ -109,11 +108,6 @@
         box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
         border: none;
         margin: auto;
-    }
-    
-    .big:active {
-        box-shadow: 0px 4px 4px rgba(0,0,0,0.8);
-        background-color: #A7A1B4;
     }
     
     .big-span {
@@ -175,6 +169,6 @@
     
     .create-span {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 800;
     }
 }
