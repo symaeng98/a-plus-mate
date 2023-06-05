@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
+import ReactGA from 'react-ga';
 import Button from '../components/Button';
 import uploadIcon from '../assets/upload.svg';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,6 +10,10 @@ import styles from '../styles/Main.module.css'
 import axios from 'axios';
 
 const Main = (props) => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);  // 페이지 URL을 보고
+    }, []);
+
     const [uploadedFile, setUploadedFile] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     

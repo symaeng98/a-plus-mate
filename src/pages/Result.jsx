@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import styles from "../styles/Result.module.css"
 import DownloadButton from '../components/DownloadButton';
 import {Link, useLocation} from 'react-router-dom';
@@ -6,6 +7,10 @@ import {Link, useLocation} from 'react-router-dom';
 // TODO
 // 버튼 클릭 시 #CEC8D8로 색깔 바꾸기
 function Result(props) {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);  // 페이지 URL을 보고
+    }, []);
+
     const location = useLocation();
     const data = location.state.data;
     const surveyUrl = process.env.React_APP_Survey_URL;

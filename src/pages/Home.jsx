@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import ReactGA from 'react-ga';
 import Button from '../components/Button';
 import {Link} from 'react-router-dom';
 import styles from "../styles/Home.module.css"
@@ -6,6 +7,9 @@ import styles from "../styles/Home.module.css"
 // TODO
 // 버튼 클릭 시 #CEC8D8로 색깔 바꾸기
 function Home(props) {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);  // 페이지 URL을 보고
+    }, []);
     return (
         <div className={styles.home}>
             <div className={styles.description}>
