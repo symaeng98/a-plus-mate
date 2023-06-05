@@ -58,8 +58,8 @@ const Main = (props) => {
                 <div className={styles["main"]}>
                     <div className={styles["title"]}>
                         <span>강의 교안 업로드하기</span>
-                        <p>강의 교안이나 정리한 내용을 업로드해주세요.</p>
-                        <p style={{ color: "red" }}>.pdf 파일로 업로드해야합니다</p>
+                        <p>강의 교안이나 정리한 내용을 pdf 파일로 업로드해주세요.</p>
+                        <p style={{ color: "red" }}>업로드한 파일은 따로 저장하지 않습니다.</p>
                     </div>
 
                     <div>
