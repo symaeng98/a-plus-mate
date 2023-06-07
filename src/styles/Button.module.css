@@ -100,6 +100,18 @@
     background-color: #aab9ee;
 }
 
+.download {
+    background-color: white;
+    border: none;
+    font-size: 34px;
+    color: #637fe4; 
+    font-weight: 800
+}
+
+.download:active {
+    color: #aab9ee;
+}
+
 @media (max-width: 800px) {
     .big {
         width: 124px;

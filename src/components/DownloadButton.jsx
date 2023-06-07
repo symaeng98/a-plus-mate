@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from '../styles/Button.module.css'
 function DownloadButton(props) {
     const downloadFile = () => {
         const url = window.URL.createObjectURL(props.data);
@@ -13,7 +13,7 @@ function DownloadButton(props) {
     };
 
     return (
-        <button style={{backgroundColor:"white", border:"none", fontSize : "24px", color:"#B9A3F8", fontWeight : "800"}} onClick={downloadFile}>{props.content}</button>
+        <button className={styles.download} onClick={downloadFile}>{props.content}</button>
     );
 }
 
