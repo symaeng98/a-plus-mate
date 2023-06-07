@@ -14,6 +14,7 @@ function Result(props) {
     const location = useLocation();
     const data = location.state.data;
     const surveyUrl = process.env.React_APP_Survey_URL;
+    const answerUrl = process.env.React_APP_Answer_URL;
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -43,10 +44,12 @@ function Result(props) {
                         <p>저희가 만든 서비스에 대한 간단한 설문조사를 해주시면 추첨을 통해</p>
                         <span style={{color:"green"}}>스타벅스 아메리카노</span>
                         <span>를 드리니 많은 참여 부탁드립니다! </span>
+                        <br/><br/>
+                        <Link style={{color:"red"}} to={surveyUrl} target="_blank" rel="noopener noreferrer">설문조사 링크</Link>
+                        <span >를 사용하셔도 됩니다!</span>
                         <p style={{fontSize:"13px"}}>(1-2분 소요)</p>
                         <div>
-                            <Link to={surveyUrl} target="_blank" rel="noopener noreferrer">설문조사 링크</Link>
-                            <span >를 사용하셔도 됩니다!</span>
+                            <Link style={{color:"#819cfa"}} to={answerUrl} target="_blank" rel="noopener noreferrer">기말대비 모의고사 답안지 보러가기</Link>
                         </div>
                     </div>
                     <div style={{alignItems:"left" ,overflow:"auto"}}>
