@@ -60,6 +60,7 @@ body {
 
   .title {
     font-size: 64px; /* 제목의 크기를 줄임 */
+    text-align: center; /* 가운데 정렬 */
   }
 
   .detail {

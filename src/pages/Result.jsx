@@ -64,7 +64,7 @@ function Result(props) {
             </div>
             <div className={styles.description}>
                 <div style={{width: "350px"}}>
-                    <span className={styles.title}>완성!</span>
+                    <div className={styles.title}>완성!</div>
                     <p className={styles.detail}>다운로드 버튼을 눌러 생성된 문제를 확인해보세요!
                         <DownloadButton data={data} content={"다운로드"}></DownloadButton>
                     </p>
